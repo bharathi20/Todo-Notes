@@ -86,25 +86,32 @@ function App() {
   return (
     <div className='todoApp'>
         {/* Form */}
-        <div className="formDiv" id='formDiv' >
+        <div className="formId" id='formId' >
         {Editing ? (
             <form onSubmit={handleEditForm}>
+                <div 
+                    className='titleHeading'>
+                    Edit Title
+                </div>
                 <input 
+                className='EditTitleContent'
                 name="editData"
                 type="text"
                 value={currentNote.title} 
                 onChange={handleEditInputChange}/>
-                <button type="submit">Replace</button>
-                <button onClick={() => setEditing(false)}>Cancel</button>
+                <div className='editButtonsDiv'>
+                <button type="submit" className='editButton'>Replace</button>
+                <button className='editButton'onClick={() => setEditing(false)}>Cancel</button>
+                </div>
             </form>
         ):(
             <form action="" id="formId" onSubmit= {handleSubmit}>
                 <div 
-                    className='title '>
+                    className='titleHeading'>
                     Title
                 </div>
-                <input 
-                    className='  ' 
+                <input
+                    className='titleContent  ' 
                     value={title}
                     onChange={handleInputChange}
                     type="text" 
@@ -126,8 +133,10 @@ function App() {
             
                 <div className='main'key={data.id}>
                 <div id='display'>{data.title}</div>
-                <button className='edit button' onClick={()=>EditNote1(data)}>edit</button>
-                <button className='button' onClick={()=>deleteNote1(data.id)}>delete</button>
+                <div className='buttonsClass'>
+                <button className='edit button' onClick={()=>EditNote1(data)}>Edit</button>
+                <button className='button' onClick={()=>deleteNote1(data.id)}>Delete</button>
+                </div>
                 </div>
             ))}
         

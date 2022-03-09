@@ -8,9 +8,16 @@ margin: 10px;
 }
 
 body{
-  background-image: linear-gradient(rgb(238, 150, 150),rgb(139, 126, 126));
+  background-image:linear-gradient(#1976d2,#00072d);
   background-repeat: no-repeat;
   height:100vh;
+}
+
+.titleContent{
+  font-size: 20px;
+  height: 30px;
+  border-radius: 11px;
+  background-color: #bbdefb;
 }
 
 .formDiv{
@@ -24,6 +31,8 @@ body{
 
 .submitButton{
   padding: 5px;
+  margin-top:7px;
+  background-color: #13293d;
   text-align: center;
 
 }
@@ -55,4 +64,84 @@ body{
   padding-left:10px;
   margin-bottom:10px;
   font-size:20px;
+}
+
+@media  screen and (max-width: 720px) {
+
+  #formId{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titleHeading{
+    font-size: 36px;
+  }
+  .EditTitleContent{
+    width: 322px;
+    height:50px;
+    font-size: 28px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    background-color: #bbdefb;
+    border-radius: 10px;
+
+  }
+  .editButtonsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .editButton{
+    border-radius: 20px;
+    font-size: 15px;
+    height: 42px;
+    background-color: #13293d;
+    color:white;
+    width:79px;
+
+  }
+  .titleContent{
+    height:50px;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .submitButton{
+    color:white;
+    margin:0 auto;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style:none;
+    height: 71px;
+    width: 75px;
+  }
+  .dataList{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main{
+    background-color: #bbdefb;
+    margin-bottom: 10px;
+    display:flex;
+    border-style: none;
+    border-radius: 15px;
+    justify-content: space-between;
+  }
+
+  .button{
+    border-radius: 20px;
+    font-size: 15px;
+    height: 40px;
+    background-color: #13293d;
+    color:white;
+    margin-right: 5px;
+    width:60px;
+  }
+
+  #display{
+    font-size:30px;
+  }
 }

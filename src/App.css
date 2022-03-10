@@ -4,7 +4,8 @@
 }
 
 .todoApp{
-margin: 10px;
+margin: 40px;
+padding: 50px;
 }
 
 body{
@@ -13,13 +14,31 @@ body{
   height:100vh;
 }
 
+.titleHeading{
+  font-size: 36px;
+}
+
 .titleContent{
-  font-size: 20px;
-  height: 30px;
+  margin-right: 10px;
+  font-size: 25px;
+  padding-left: 10px;
+  height: 65px;
+  width: 70vw;
   border-radius: 11px;
   background-color: #bbdefb;
 }
 
+#display{
+  overflow: auto;
+  font-size: 25px;
+}
+.buttonsClass{
+  margin-top: 10px;
+}
+
+.inputAndSubmit{
+  display: flex;
+}
 .formDiv{
   padding-left: 10px;  
 }
@@ -30,11 +49,14 @@ body{
 
 
 .submitButton{
-  padding: 5px;
-  margin-top:7px;
+  color:white;
+  margin:0 auto;
+  font-size: 20px;
+  border-radius: 15px;
+  border-style:none;
+  height: 71px;
+  width: 227px;
   background-color: #13293d;
-  text-align: center;
-
 }
 
 #formId{
@@ -49,7 +71,8 @@ body{
 }
 
 .main{
-  border:2px solid black;
+  border-radius:15px;
+  background-color: #bbdefb;
   padding: 10px;
   font-size: 20px;
 }
@@ -57,6 +80,10 @@ body{
   font-size: 15px;
   padding:5px;
   width:100px;
+  border-radius: 20px;
+  background-color: #13293d;
+  margin-right: 5px;
+  color: white;
   text-align: center;
 }
 
@@ -66,11 +93,13 @@ body{
   font-size:20px;
 }
 
-@media  screen and (max-width: 720px) {
+@media  screen and (max-width: 896px) {
+
+  .todoApp{
+    margin: 0px;
+    }
 
   #formId{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
   .titleHeading{
@@ -109,12 +138,8 @@ body{
   }
 
   .submitButton{
-    color:white;
-    margin:0 auto;
-    font-size: 20px;
     border-radius: 30px;
     border-style:none;
-    height: 71px;
     width: 75px;
   }
   .dataList{
@@ -123,25 +148,25 @@ body{
   }
 
   .main{
-    background-color: #bbdefb;
     margin-bottom: 10px;
     display:flex;
     border-style: none;
-    border-radius: 15px;
     justify-content: space-between;
   }
 
+  .inputAndSubmit{
+    flex-direction: column;
+  }
+
   .button{
-    border-radius: 20px;
-    font-size: 15px;
     height: 40px;
-    background-color: #13293d;
-    color:white;
-    margin-right: 5px;
+    margin-bottom: 4px;
     width:60px;
   }
 
   #display{
     font-size:30px;
+    width:268px;
+    text-align: start;
   }
 }

@@ -110,6 +110,7 @@ function App() {
                     className='titleHeading'>
                     Title
                 </div>
+                <div className='inputAndSubmit'>
                 <input
                     className='titleContent  ' 
                     value={title}
@@ -122,6 +123,7 @@ function App() {
                     type="submit">
                         Submit
                 </button>
+                </div>
         
             </form>
             

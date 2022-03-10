@@ -170,3 +170,15 @@ body{
     text-align: start;
   }
 }
+
+@media screen and (max-width:420px) {
+  
+  #display{
+    width:200px;
+  }
+  .buttonsClass{
+    display:flex;
+    flex-direction: row;
+  }
+  
+}

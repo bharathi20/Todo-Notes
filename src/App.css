@@ -84,8 +84,7 @@ body{
   font-size: 20px;
   border-radius: 15px;
   border-style:none;
-  height: 71px;
-  width: 227px;
+  padding:15px;
   background-color: #13293d;
 }
 
@@ -108,8 +107,7 @@ body{
 }
 .button{
   font-size: 15px;
-  padding:5px;
-  width:100px;
+  padding:14px;
   border-radius: 20px;
   background-color: #13293d;
   margin-right: 5px;
@@ -180,6 +178,7 @@ body{
   .main{
     margin-bottom: 10px;
     display:flex;
+    flex-direction: column;
     border-style: none;
     justify-content: space-between;
   }
@@ -188,11 +187,10 @@ body{
     flex-direction: column;
   }
 
-  .button{
-    height: 40px;
+  /* .button{
     margin-bottom: 4px;
     width:60px;
-  }
+  } */
 
   #display{
     font-size:30px;

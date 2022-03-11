@@ -93,8 +93,9 @@ function App() {
                     className='titleHeading'>
                     Edit Title
                 </div>
+                <div className='inputAndSubmit'>
                 <input 
-                className='EditTitleContent'
+                className='titleContent'
                 name="editData"
                 type="text"
                 value={currentNote.title} 
@@ -102,6 +103,7 @@ function App() {
                 <div className='editButtonsDiv'>
                 <button type="submit" className='editButton'>Replace</button>
                 <button className='editButton'onClick={() => setEditing(false)}>Cancel</button>
+                </div>
                 </div>
             </form>
         ):(

@@ -29,6 +29,35 @@ body{
   background-color: #bbdefb;
 }
 
+.EditTitleContent {
+  width: 322px;
+  height: 50px;
+  font-size: 28px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  background-color: #bbdefb;
+  border-radius: 10px;
+}
+
+.editButtonsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 6px;
+}
+
+.editButton {
+  border-radius: 15px;
+  font-size: 20x;
+  height: 71px;
+  width:227px;
+  border-style: none;
+  background-color: #13293d;
+  color: white;
+  width: 79px;
+}
+
 #display{
   overflow: auto;
   font-size: 25px;

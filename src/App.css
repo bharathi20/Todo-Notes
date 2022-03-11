@@ -29,7 +29,7 @@ body{
   background-color: #bbdefb;
 }
 
-.EditTitleContent {
+/* .EditTitleContent {
   width: 322px;
   height: 50px;
   font-size: 28px;
@@ -37,7 +37,7 @@ body{
   margin-bottom: 5px;
   background-color: #bbdefb;
   border-radius: 10px;
-}
+} */
 
 .editButtonsDiv {
   display: flex;
@@ -135,7 +135,7 @@ body{
   .titleHeading{
     font-size: 36px;
   }
-  .EditTitleContent{
+  /* .EditTitleContent{
     width: 322px;
     height:50px;
     font-size: 28px;
@@ -144,7 +144,7 @@ body{
     background-color: #bbdefb;
     border-radius: 10px;
 
-  }
+  } */
   .editButtonsDiv{
     display: flex;
     flex-direction: row;
@@ -152,12 +152,12 @@ body{
     align-items: center;
   }
   .editButton{
-    border-radius: 20px;
+    border-radius: 6px;
     font-size: 15px;
     height: 42px;
     background-color: #13293d;
     color:white;
-    width:79px;
+    width:132px;
 
   }
   .titleContent{
@@ -168,9 +168,9 @@ body{
   }
 
   .submitButton{
-    border-radius: 30px;
+    border-radius: 12px;
     border-style:none;
-    width: 75px;
+    width:124px;
   }
   .dataList{
     display: flex;
